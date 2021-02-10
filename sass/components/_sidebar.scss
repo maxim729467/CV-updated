@@ -1,0 +1,157 @@
+.sidebar {
+  background: rgba(30, 41, 57, 0.9);
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $min-tablet) {
+    padding-top: 315px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    padding-top: 390px;
+    padding-bottom: 20px;
+  }
+}
+
+.tech-skills__bullets,
+.soft-skills__bullets {
+  color: $aside-bullets;
+}
+
+.contacts {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contacts__header,
+.tech-skills__title,
+.soft-skills__title {
+  margin-bottom: 10px;
+}
+
+.contacts__header {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: $bg-color;
+}
+
+.contacts__list,
+.social__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contacts__list {
+  margin-left: 22px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+
+  color: $links-color;
+  transition: color 250ms linear;
+}
+
+.contacts__abbreviation {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+
+  transition: color 250ms linear;
+}
+
+.contacts__link:hover .contacts__abbreviation,
+.contacts__link:focus .contacts__abbreviation {
+  color: $links-color;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tech-skills {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.soft-skills {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.soft-skills::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px $text-color solid;
+  border-radius: 2%;
+}
+
+.tech-skills__item,
+.soft-skills__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $text-color;
+}
+
+.contacts__header,
+.tech-skills__title,
+.soft-skills__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: $bg-color;
+}
+
+.social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__icon {
+  transform: scale(1);
+  transition: all 250ms linear;
+}
+
+.social__item:hover .social__icon,
+.social__item:focus .social__icon {
+  transform: scale(1.2);
+}
+
+.contacts,
+.tech-skills,
+.soft-skills,
+.social {
+  @media screen and (min-width: $min-tablet) {
+    width: 270px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    width: 340px;
+  }
+}

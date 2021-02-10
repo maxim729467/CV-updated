@@ -1,0 +1,207 @@
+.main-section {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: $min-desktop) {
+    // padding-right: 20px;
+    // padding-left: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.intro {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: $min-desktop) {
+    padding-top: 20px;
+  }
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px $text-color solid;
+  border-radius: 2%;
+}
+
+.intro__job {
+  color: $title-color;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: $max-mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $min-tablet) {
+    font-size: 22px;
+  }
+}
+
+.intro__name {
+  color: $title-color;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 15px;
+
+  @media screen and (max-width: $max-mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $min-tablet) {
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    font-size: 45px;
+  }
+}
+
+.intro__pre-header {
+  color: #595959;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.main-section__experience {
+  color: $title-color;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  // @media screen and (max-width: $max-mobile) {
+
+  // }
+}
+
+// JOB POSITIONS
+
+.job {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.job__position {
+  color: $title-color;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  margin-bottom: 5px;
+
+  // @media screen and (max-width: $max-mobile) {
+
+  // }
+}
+
+.job__company {
+  color: $education;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.job__timeframes,
+.education__timeframes {
+  color: $timeframes-color;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+
+  margin-bottom: 10px;
+
+  // @media screen and (max-width: $max-mobile) {
+
+  // }
+}
+
+.job__responsibilities {
+  color: $main-bullets;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.job__divider,
+.education__divider {
+  color: $timeframes-color;
+}
+
+// EDUCATION
+
+.education {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.education__header {
+  color: $title-color;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  margin-bottom: 15px;
+  // @media screen and (max-width: $max-mobile) {
+
+  // }
+}
+
+.education__academy {
+  color: $education;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  margin-bottom: 5px;
+
+  // @media screen and (max-width: $max-mobile) {
+
+  // }
+}
+
+.education__faculty {
+  color: $title-color;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  margin-bottom: 5px;
+
+  // @media screen and (max-width: $max-mobile) {
+
+  // }
+}
+
+.intro,
+.job,
+.education {
+  @media screen and (min-width: $min-desktop) {
+    width: 650px;
+  }
+}

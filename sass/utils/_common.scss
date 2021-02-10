@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: $body-color;
+  font-family: Montserrat;
+}
+
+ul {
+  margin: 0;
+}
+
+// div {
+//   outline: 1px solid tomato;
+// }
+
+.container {
+  background-color: $bg-color;
+  // outline: 1px solid green;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
+  @media screen and (max-width: $max-mobile) {
+    max-width: $min-mobile;
+    padding-top: 15px;
+  }
+
+  @media screen and (min-width: 720px) {
+    width: 720px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    width: $min-desktop;
+    border-radius: 0.5%;
+    overflow: hidden;
+  }
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $min-tablet) {
+    position: absolute;
+    width: 300px;
+    top: 15px;
+    left: 0;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    width: 370px;
+    top: 20px;
+  }
+}
